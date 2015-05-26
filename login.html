@@ -1,0 +1,82 @@
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Bootstrap -->
+	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<title>PRACTICA ENTREGABLE 2 APLICACIONES WEB</title>
+
+</head>
+<body role="document">
+	<div class="container theme-showcase" role="main">
+		<div class="jumbotron">
+			<h1> Aplicaciones Web Práctica 2 </h1>
+			<p> Aplicación de Login <p>
+				<p>Notas para correción : la utilización de Bootstrap es meramente estética.</p>
+			</div>
+			<div class="col-md-4">
+				<h3> Login Usuario </h3>
+				<form action="login.php" method="POST">
+					<div class="form-group" id="divnombre">
+						<label for="nombre">Usuario</label>
+						<span title="Introduce Nombre de Usuario">
+							<input type="text" class="form-control" name="usuario" placeholder="Introduce Nombre de Usuario" required>
+						</span>
+					</div>
+					<div class="form-group" id="divnombre">
+						<label for="password">Contraseña</label>
+						<span title="Introduce tu contraseña">
+							<input type="text" class="form-control" name="password" placeholder="Introduce tu contraseña" required>
+						</span>
+					</div>
+					<button class="btn btn-success btn-lg" type="submit" style="display: block; width: 100%;">Login</input>  
+					</form>
+				</div>
+				<div class="col-md-4"> 
+					<h3> Registrar Nuevo Usuario y Contraseña </h3>
+					<form action="registro.php" method="POST">
+						<div class="form-group" id="divnombre">
+							<label for="nombre">Usuario</label>
+							<span title="Introduce Nombre de Usuario">
+								<input type="text" class="form-control" name="usuario" placeholder="Introduce Nombre de Usuario" required>
+							</span>
+						</div>
+						<div class="form-group" id="divnombre">
+							<label for="password">Contraseña</label>
+							<span title="Introduce tu contraseña">
+								<input type="text" class="form-control" name="password" placeholder="Introduce tu contraseña" required>
+							</span>
+						</div>
+						<button class="btn btn-success btn-lg" type="submit" style="display: block; width: 100%;">Registro</input>  
+						</form>
+					</div> 
+					<div class="col-md-4"> 
+						<h3> Cambiar Contraseña Usuario </h3>
+
+						<form action="cambiopassword.php" method="POST">
+							<div class="form-group" id="divnombre">
+								<label for="nombre">Usuario</label>
+								<span title="Introduce Nombre de Usuario">
+									<input type="text" class="form-control" name="usuario" placeholder="Introduce Nombre de Usuario" required>
+								</span>
+							</div>
+							<div class="form-group" id="divnombre">
+								<label for="password">Contraseña anterior</label>
+								<span title="Introduce tu contraseña antigua">
+									<input type="text" class="form-control" name="password_old" placeholder="Introduce tu contraseña antigua" required>
+								</span>
+							</div>
+							<div class="form-group" id="divnombre">
+								<label for="password">Contraseña Nueva</label>
+								<span title="Introduce tu contraseña nueva">
+									<input type="text" class="form-control" name="password_new" placeholder="Introduce tu contraseña nueva" required>
+								</span>
+							</div>
+							<button class="btn btn-success btn-lg" type="submit" style="display: block; width: 100%;">Cambio de Password</input>  
+							</form>
+						</div>
+					</div>
+				</body>
+				</html>
